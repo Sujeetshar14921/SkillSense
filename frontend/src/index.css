@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌐 Ensure full height for app layout */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f6f0ff, #e8e8ff);
+  overflow-x: hidden;
+}
+
+/* 🖥️ Every page should take full height minus navbar */
+.main-page {
+  min-height: calc(100vh - 80px); /* 80px = Navbar height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+}
